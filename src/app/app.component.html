@@ -1,0 +1,11 @@
+<form #form="ngForm" (ngSubmit)="getForm(form.value)">
+  <input type="text" ngModel name="name" placeholder="enter name" /> <br />
+  <input type="text" ngModel name="email" placeholder="enter email" /> <br />
+  <input type="text" ngModel name="password" placeholder="enter password" />
+  <br />
+  <button>Register</button>
+</form>
+
+<h2>{{ formData.name }}</h2>
+<h2>{{ formData.email }}</h2>
+<h2>{{ formData.password }}</h2>
